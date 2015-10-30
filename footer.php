@@ -1,6 +1,6 @@
 <!-- @@@@@@@@@@@@@@@@@@@@@@     Footer            @@@@@@@@@@@@@@@@@@@@@@@@@@ -->
 <footer>
-    <p>Web site designed by Maxfield Davis.</p>
+    <p>This web site is designed by Maxfield V. Davis</p>
 </footer>
 <!-- @@@@@@@@@@@@@@@@@@@@ Ends Footer             @@@@@@@@@@@@@@@@@@@@@@@@@@ -->
 

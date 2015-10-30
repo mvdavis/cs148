@@ -1,17 +1,13 @@
 <!DOCTYPE html>
-/*<!--
+<!--
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-* 
-*/
 <?php
 include "top.php";
-$query = 'SELECT tblTeachers.fldFirstName, tblTeachers.fldLastName, count(tblStudents.fldFirstName) as total FROM tblSections '
-        . 'JOIN tblEnrolls on tblSections.fldCRN = tblEnrolls.`fnkSectionId` '
-        . 'JOIN tblStudents on pmkStudentId = fnkStudentId JOIN tblTeachers on tblSections.fnkTeacherNetId=pmkNetId '
-        . 'WHERE fldType != "LAB" group by fnkTeacherNetId ORDER BY total desc';
+// put your code here
+$query = 'SELECT tblTeachers.fldFirstName, tblTeachers.fldLastName, count(tblStudents.fldFirstName) as total FROM tblSections JOIN tblEnrolls on tblSections.fldCRN = tblEnrolls.`fnkSectionId` JOIN tblStudents on pmkStudentId = fnkStudentId JOIN tblTeachers on tblSections.fnkTeacherNetId=pmkNetId WHERE fldType != "LAB" group by fnkTeacherNetId ORDER BY total desc';
 $info2 = $thisDatabaseReader->select($query, "", 1, 2, 2, 0, false, false);
 print "The total number of records is: ";
 echo count($info2);
@@ -41,3 +37,4 @@ include "footer.php";
 ?>
 </body>
 </html>
+

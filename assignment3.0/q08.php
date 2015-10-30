@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-/*<!--
+<!--
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <?php
-include "top.php";// put your code here
-$query = 'SELECT distinct fldBuilding, count(*) from tblSections group by fldBuilding ' ;
+include "top.php";
+// put your code here
+$query = 'SELECT distinct fldBuilding, count(*) FROM tblSections GROUP BY fldBuilding ';
 $info2 = $thisDatabaseReader->select($query, "", 0, 0, 0, 0, false, false);
-print "The total number of records is: "; echo count($info2);
+print "The total number of records is: ";
+echo count($info2);
 echo '<p>' . $query . '<p>';
 print '<table>';
-$columns = 1;
+$columns = 2;
 
 $highlight = 0; // used to highlight alternate rows
 foreach ($info2 as $rec) {

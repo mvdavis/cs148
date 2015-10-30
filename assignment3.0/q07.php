@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-/*<!--
+<!--
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <?php
-include "top.php";// put your code here
-$query = 'SELECT distinct fldDepartment from tblCourses' ;
+include "top.php";
+// put your code here
+$query = 'SELECT DISTINCT fldDepartment FROM tblCourses';
 $info2 = $thisDatabaseReader->select($query, "", 0, 0, 0, 0, false, false);
 print "The total number of records is: ";
 echo count($info2);
@@ -36,3 +37,4 @@ include "footer.php";
 ?>
 </body>
 </html>
+

@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-/*<!--
+<!--
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-* 
-*/
 <?php
 include "top.php";
+// put your code here
 $query = 'SELECT fnkSectionId, fldLastName, fldFirstName FROM tblStudents JOIN tblEnrolls ON pmkStudentId = fnkStudentId WHERE fnkCourseId = 392';
 $info2 = $thisDatabaseReader->select($query, "", 1, 0, 0, 0, false, false);
 print "The total number of records is: ";
@@ -38,3 +37,4 @@ include "footer.php";
 ?>
 </body>
 </html>
+

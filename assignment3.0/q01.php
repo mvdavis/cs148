@@ -7,7 +7,7 @@ and open the template in the editor.
 <?php
 include "top.php";
 // put your code here
-$query = 'SELECT DISTINCT fldCourseName  FROM   tblCourses JOIN tblEnrolls ON pmkCourseId = fnkCourseId WHERE fldGrade = 100 ORDER BY fldCourseName';
+$query = 'SELECT DISTINCT fldCourseName FROM tblCourses JOIN tblEnrolls ON pmkCourseId = fnkCourseId WHERE fldGrade = 100 ORDER BY fldCourseName';
 $info2 = $thisDatabaseReader->select($query, "", 1, 1, 0, 0, false, false);
 print "The total number of records is: ";
 echo count($info2);
@@ -37,3 +37,4 @@ include "footer.php";
 ?>
 </body>
 </html>
+

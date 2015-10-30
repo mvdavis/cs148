@@ -7,11 +7,13 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>CS148 Maxfield</title>
+         <p></p><figure class="img-right tiny">
+        <img class="tiny" src="http://i.imgur.com/YP3verF.gif" alt="Coding Rage"></img>
+         <figcaption>Coding Rage</figcaption>
     </head>
     <h1> These are the links to my other assignments.<h1>
     <body>
-        
         <a href="assignment1.0/index.php">Assignment1.0</a>
         <p>
         <a href="assignment2.0/select.php">Assignment2.0</a>
